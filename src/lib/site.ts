@@ -5,8 +5,7 @@ export const SITE = {
   phone: "+255686005775",
   phoneHref: "tel:+255686005775",
   whatsapp: "https://wa.me/255686005775",
-  // TODO: replace with the real pair code page link from the owner.
-  pairUrl: "#pair-code",
+  pairUrl: "https://generatepaircode.lovable.app/",
   herokuUrl:
     "https://dashboard.heroku.com/new?template=https://github.com/hanstechy1/hans-techy-v2",
 } as const;
