@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Site-wide contact details and external links (pair code, Heroku deploy) live only in `src/lib/site.ts`; why: one place to update them.
+- Shared layout (header/footer) wraps `<Outlet />` in `src/routes/__root.tsx`; each page is its own route file with its own head().
