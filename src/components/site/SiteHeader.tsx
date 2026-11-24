@@ -23,22 +23,8 @@ export function SiteHeader() {
           <span className="font-display text-lg font-bold tracking-wide">{SITE.name}</span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
-          {NAV.map((n) => (
-            <Link
-              key={n.to}
-              to={n.to}
-              className="rounded-lg px-4 py-2 font-mono text-sm text-muted-foreground transition-colors hover:text-foreground"
-              activeProps={{ className: "!text-primary" }}
-              activeOptions={{ exact: true }}
-            >
-              {n.label}
-            </Link>
-          ))}
-        </nav>
-
         <button
-          className="grid h-10 w-10 place-items-center rounded-lg border border-border md:hidden"
+          className="grid h-10 w-10 place-items-center rounded-lg border border-border"
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle menu"
         >
@@ -46,7 +32,7 @@ export function SiteHeader() {
         </button>
       </div>
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-border/60 px-5 py-3 md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-border/60 px-5 py-3">
           {NAV.map((n) => (
             <Link
               key={n.to}
