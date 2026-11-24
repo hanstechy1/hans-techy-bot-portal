@@ -41,6 +41,16 @@ function About() {
         downloads, AI and fun to your chats.
       </PageHero>
 
+      <section className="mx-auto max-w-6xl px-5 pb-14">
+        <Reveal>
+          <img
+            src="/images/bot-about.png"
+            alt="HANS TECHY V2 bot managing WhatsApp chats"
+            className="card-glow w-full rounded-3xl border border-border object-cover"
+          />
+        </Reveal>
+      </section>
+
       <section className="mx-auto max-w-6xl px-5">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {STATS.map((s, i) => (

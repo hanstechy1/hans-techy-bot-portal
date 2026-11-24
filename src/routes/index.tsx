@@ -15,6 +15,7 @@ import { ActionButtons } from "@/components/site/ActionButtons";
 import { Reveal } from "@/components/site/Reveal";
 import { HerokuLogo } from "@/components/site/HerokuLogo";
 import { SITE } from "@/lib/site";
+import bannerAsset from "@/assets/hans-techy-v2.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -139,6 +140,11 @@ function Index() {
             <div className="animate-float">
               <Terminal />
             </div>
+            <img
+              src="/images/bot-hero.png"
+              alt="HANS TECHY V2 bot mascot"
+              className="absolute -right-6 -top-14 w-28 rounded-2xl border border-primary/40 shadow-glow animate-float [animation-delay:-2s] md:-right-10 md:w-36"
+            />
             <div className="absolute -bottom-6 -left-4 flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 shadow-glow">
               <Bot className="h-6 w-6 text-primary" />
               <div>
@@ -158,6 +164,16 @@ function Index() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pt-20">
+        <Reveal>
+          <img
+            src={bannerAsset.url}
+            alt="HANS TECHY V2 WhatsApp bot banner"
+            className="card-glow w-full rounded-3xl border border-border object-cover"
+          />
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-24">
