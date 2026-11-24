@@ -12,11 +12,16 @@ export const Route = createFileRoute("/services")({
       { property: "og:title", content: "Services — HANS TECHY V2" },
       { property: "og:description", content: "Explore everything the HANS TECHY V2 WhatsApp bot can do." },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: OG_IMAGE },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
   }),
   component: Services,
 });
+
+const OG_IMAGE =
+  "https://id-preview--c06a1821-9666-49c5-9f44-2695f29e43ae.lovable.app/__l5e/assets-v1/0b60f9e8-e07c-46ff-a17e-d14b9331a3e4/hans-techy-og.png";
 
 const SERVICES = [
   { icon: Users, title: "Group Management", text: "Welcome & goodbye messages, anti-link, kick, promote, demote and tag-all.", cmd: ".antilink on" },
